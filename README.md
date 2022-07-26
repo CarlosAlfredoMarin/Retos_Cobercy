@@ -1,3 +1,6 @@
+# Tabla de Contenidos
+- [Reto Hackerrank - Time in Words](#Time in Words)
+
 # Time in Words
 Enunciado del problema:
 
