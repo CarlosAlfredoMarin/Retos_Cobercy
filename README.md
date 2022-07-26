@@ -143,7 +143,7 @@ Actualizar pip
 ```python
 python.exe -m pip install --upgrade pip
 ```
-En el archivo <a href="https://github.com/CarlosAlfredoMarin/Retos_Cobercy/blob/master/API_flask_MySQL/config.py" target="_blank">config.py</a> se configura que el servidor comience por defecto activo, indicamos que somos el usuario rapiz, indicamos el nombre de la base de datos creada.
+En el archivo <a href="https://github.com/CarlosAlfredoMarin/Retos_Cobercy/blob/master/API_flask_MySQL/config.py" target="_blank">config.py</a> se configura que el servidor comience por defecto activo, indicamos que somos el usuario raíz, indicamos el nombre de la base de datos creada.
 
 ```python
 class DevelopmentConfig():
