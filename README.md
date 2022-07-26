@@ -1,6 +1,6 @@
 # Tabla de Contenidos
 - [Reto Hackerrank - Time in Words](#Time-in-Words)
-- [Conexión con Base de Datos - CRUD](#REST-API-con-Python,-Flask-y-MySQL)
+- [Conexión con Base de Datos - CRUD](#REST-API-con-Python-Flask-y-MySQL)
 
 # Time in Words
 Enunciado del problema:
