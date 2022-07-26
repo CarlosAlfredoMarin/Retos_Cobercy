@@ -173,14 +173,24 @@ DEBUG = True
 
 En el archivo <a href="https://github.com/CarlosAlfredoMarin/Retos_Cobercy/blob/master/API_flask_MySQL/app.py" target="_blank">app.py</a>
 
-Imortamos las librerías necesarias
+Importamos las librerías necesarias
 ```python
 from flask import Flask, jsonify, request
 from config import config
 from flask_mysqldb import MySQL
 ```
 
+La función principal lanza el servidor
+```python
+if __name__ == "__main__":
+    app.config.from_object(config['development'])
+    app.register_error_handler(404, pagina_no_encontrada)
+    app.run()
+```
+
 Ya tenemos un servidor creado con Python y con Flask. 
+
+
 
 <br>
 <br>
