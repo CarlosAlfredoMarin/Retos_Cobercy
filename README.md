@@ -12,7 +12,7 @@ Solución del problema:
 ## Explicación del código
 
 La función main se ejecuta por defecto, lo primero que se hace es leer 2 números y convertirlos a enteros, estos serán la hora y los minutos.
-```
+```python
 if __name__ == '__main__':
     h: int = int(input())
     m: int = int(input())
@@ -20,18 +20,18 @@ if __name__ == '__main__':
 ```
 
 Se llama a la función principal que recibe como parámetros las 2 variables leídas por teclado.
-```
+```python
 timeInWords(h=h, m=m)
 ```
 
 Lo primero que hace la función es crear un diccionario, este contiene los números del 1 al 19 y las decenas  20 a 50. Las Llaves del diccionario son los números arábigos y lo valores del diccionario son las letras.
-```
+```python
 def timeInWords(h: int, m: int) -> str:
     dict = crear_listas()
 ```
 
 
-```
+```python
 def crear_listas() -> dict[str, str]:
 
     my_dict_0_19: dict[str, str] = {
@@ -69,7 +69,7 @@ def crear_listas() -> dict[str, str]:
 
 La función lista_completa() rellena el resto de Llaves-Valor necesarios.
 
-```
+```python
 def lista_completa(my_dict_decades, my_dict_0_19) -> dict[str, str]:    
     dict_0_60: dict[str, str] = {}
     dict_0_60 = dict(dict_0_60, **my_dict_0_19)
@@ -95,6 +95,7 @@ def lista_completa(my_dict_decades, my_dict_0_19) -> dict[str, str]:
 
 Retomando la función principal, se realizan un serie de validaciones para saber cómo imprimir la hora en pantalla:
 
+```python
 def timeInWords(h: int, m: int) -> str:
     dict = crear_listas()
 
@@ -117,7 +118,7 @@ def timeInWords(h: int, m: int) -> str:
         print(f'{rest} minutes to {next_hour}')
     elif m == 30:
         print(f'half past {hour}')
-
+```
 
 [Problem Time in Words]: https://www.hackerrank.com/challenges/the-time-in-words/problem?isFullScreen=true
 [Solution Time in Words]: https://github.com/CarlosAlfredoMarin/Problem_Solutions_Hackerrank/blob/main/Time_in_Words.py
