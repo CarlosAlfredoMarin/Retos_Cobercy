@@ -143,10 +143,25 @@ Actualizar pip
 ```python
 python.exe -m pip install --upgrade pip
 ```
+En el archivo <a href="https://github.com/CarlosAlfredoMarin/Retos_Cobercy/blob/master/API_flask_MySQL/config.py" target="_blank">config.py</a> se configura que el servidor comience por defecto activo, indicamos que somos el usuario rapiz, indicamos el nombre de la base de datos creada.
+
+```python
+class DevelopmentConfig():
+    DEBUG = True
+    MYSQL_HOST = 'localhost'
+    MYSQL_USER = 'root'
+    MYSQL_PASSWORD = '123456'
+    MYSQL_DB = 'api_flaks'
+
+ 
+config = {
+    'development': DevelopmentConfig
+}
+```
 
 Activar servidor
 ```python
-py .\src\app.y
+py .\src\app.py
 ```
 
 Hasta el momento no hay ninguna respuesta para mostrar al cliente, por eso, se muestra el error 404 (Recurso no encontrado).
@@ -193,18 +208,3 @@ PHPMyAdmin en Opera no permite escribir código SQL.
 <br>
 <br>
 <br>
-En el archivo <a href="https://github.com/CarlosAlfredoMarin/Retos_Cobercy/blob/master/API_flask_MySQL/config.py" target="_blank">config.py</a> se configura que el servidor comience por defecto activo, indicamos que somos el usuario rapiz, indicamos el nombre de la base de datos creada.
-
-```python
-class DevelopmentConfig():
-    DEBUG = True
-    MYSQL_HOST = 'localhost'
-    MYSQL_USER = 'root'
-    MYSQL_PASSWORD = '123456'
-    MYSQL_DB = 'api_flaks'
-
- 
-config = {
-    'development': DevelopmentConfig
-}
-```
