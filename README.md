@@ -122,3 +122,68 @@ def timeInWords(h: int, m: int) -> str:
 
 [Problem Time in Words]: https://www.hackerrank.com/challenges/the-time-in-words/problem?isFullScreen=true
 [Solution Time in Words]: https://github.com/CarlosAlfredoMarin/Problem_Solutions_Hackerrank/blob/main/Time_in_Words.py
+
+
+
+
+
+
+
+
+# REST API con Python, Flask y MySQL
+
+## Creando el Servidor
+Creación del ambiente virtual:
+```python
+py -m venv venv
+.\venv\Scripts\activate
+```
+
+Actualizar pip
+```python
+python.exe -m pip install --upgrade pip
+```
+
+Activar servidor
+```python
+py .\src\app.y
+```
+
+Hasta el momento no hay ninguna respuesta para mostrar al cliente, por eso, se muestra el error 404 (Recurso no encontrado).
+
+Para que el servidor se actualice automáticamente
+```python
+app.run(debug=True)
+```
+
+Ya tenemos un servidor creado con Python y con Flask. 
+
+<br>
+<br>
+<br>
+
+## Instalación XAMPP
+Instalé XAMPP como normalmente se instala cualquier programa en Windows.
+
+**Nota:** Apagar el puerto 3306, dado que ya tenía instalado MySQL.
+
+
+
+
+
+<br>
+<br>
+<br>
+
+## Creando la Base de Datos
+Escribimos en el navegador:
+~~~
+localhost/phpmyadmin
+~~~
+
+**Thunder Client:** Extensión de VS Code para realizar peticiones HTTP. Es equivalente a Postman o Insomnia.
+
+**200:** Código de respuesta cuando todo ha ido bien.
+
+
+PHPMyAdmin en Opera no permite escribir código SQL.
