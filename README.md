@@ -143,7 +143,7 @@ Actualizar pip
 ```python
 python.exe -m pip install --upgrade pip
 ```
-En el archivo <a href="https://github.com/CarlosAlfredoMarin/Retos_Cobercy/blob/master/API_flask_MySQL/config.py" target="_blank">config.py</a> se configura que el servidor comience por defecto activo, indicamos que somos el usuario raíz, indicamos el nombre de la base de datos creada.
+En el archivo <a href="https://github.com/CarlosAlfredoMarin/Retos_Cobercy/blob/master/API_flask_MySQL/config.py" target="_blank">config.py</a> se configura que el servidor se actualice por defecto automáticamente, indicamos que somos el usuario raíz, indicamos el nombre de la base de datos creada.
 
 ```python
 class DevelopmentConfig():
@@ -168,7 +168,16 @@ Hasta el momento no hay ninguna respuesta para mostrar al cliente, por eso, se m
 
 Para que el servidor se actualice automáticamente
 ```python
-app.run(debug=True)
+DEBUG = True
+```
+
+En el archivo <a href="https://github.com/CarlosAlfredoMarin/Retos_Cobercy/blob/master/API_flask_MySQL/app.py" target="_blank">app.py</a>
+
+Imortamos las librerías necesarias
+```python
+from flask import Flask, jsonify, request
+from config import config
+from flask_mysqldb import MySQL
 ```
 
 Ya tenemos un servidor creado con Python y con Flask. 
